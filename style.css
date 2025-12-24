@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* ONE SINGLE HERO BACKGROUND */
+.hero-wrapper {
+  background-image: url('./images/bgs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;   /* header + home dono cover */
+  width: 100%;
+  position: relative;
+}
+
+/* optional dark overlay */
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+/* HEADER */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+/* HOME SECTION */
+.home-sec {
+  min-height: calc(100vh - 90px); /* header ke baad remaining */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home-sec h1,
+.home-sec p,
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* Mobile fix */
+@media (max-width: 991px) {
+  .nav-center {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 260px) {
+  #logo{
+    width: 110px;
+  }
+}

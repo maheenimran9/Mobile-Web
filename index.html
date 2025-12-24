@@ -5,38 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google.com</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- ////////// HEADER---START-HERE ////////// -->
-    <header>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand ms-2" href="#">
-      <img src="./images/Logo.png" alt="Google" style="height:3rem;">
+     <!-- ONE SINGLE WRAPPER -->
+<div class="hero-wrapper">
+
+  <!-- HEADER -->
+  <header class="container-xxl">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid position-relative">
+
+    <!-- LOGO (LEFT) -->
+    <a class="navbar-brand" href="">
+      <img src="./images/Logo.png" alt="Logo" height="55" id="logo">
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#nav">
+    <!-- TOGGLER (MOBILE) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="nav">
-      <ul class="navbar-nav gap-3 mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <!-- CENTER MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-center gap-4">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Collection</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
-      <div class="ms-auto">
-        <button class="btn btn-outline-success me-3">Order</button>
-      </div>
     </div>
-  </nav>
-</header>
+
+    <!-- BUTTON (RIGHT) -->
+    <button type="button" class="btn btn-outline-success">Primary</button>
+
+  </div>
+</nav>
+  </header>
     <!-- ////////// HEADER---END-HERE ////////// -->
     
     <!-- ////////// HOME-SECTION---START-HERE ////////// -->
-    
+<section class="home-sec">
+    <div class="lead w-50 ms-5">
+      <h1 class="display-5 fw-bold">GOOGLE PIXELS PHONE</h1>
+      <p class="lead">Experience the ultimate mobile performance with Google Pixel crystal-clear display, lightning-fast speed, and smart AI features. Perfect for work, gaming, and photography. Get yours now and enjoy a phone designed to keep up with your life, fully optimized for every task.</p>
+      <button type="button" class="btn btn-outline-success btn-lg">Large button</button>
+      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+    </div>
+    <div class="w-50  img-fluid">
+      <img src="./images/mobile.png"
+     alt="Pixel 10"
+     height="360px"
+     class="animate__animated animate__bounce animate__infinite mobile">
+    </div>
+  </section>
+
+</div>
     <!-- ////////// HOME-SECTION---END-HERE ////////// -->
 
     <!-- ////////// ABOUT-SECTION---START-HERE ////////// -->
