@@ -14,13 +14,16 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- ////////// HEADER---START-HERE ////////// -->
      <!-- ONE SINGLE WRAPPER -->
-<div class="hero-wrapper">
+      <div class="hero-wrapper">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark container-xxl">
       <div class="container-fluid position-relative">
@@ -38,8 +41,8 @@
         <!-- Center Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav nav-center gap-4">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Collection</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
@@ -55,11 +58,10 @@
     <!-- ////////// HEADER---END-HERE ////////// -->
     
     <!-- ////////// HOME-SECTION---START-HERE ////////// -->
-    <section class="home-sec">
       <!-- Content -->
-     <div class="home-inner">
+     <div class="home-inner container-xxl" id="home">
       <div class="content">
-        <h1>Google Pixel Phones</h1>
+        <h1 class="head1">Google Pixel Phones</h1>
         <p>Experience the ultimate mobile performance with Google Pixel 
     crystal-clear display, lightning-fast speed, and smart AI features. Perfect 
     for work, gaming, and photography. Get yours now and enjoy a phone designed 
@@ -72,14 +74,149 @@
         <img src="./images/mobile.png" alt="Mobile" class="animate__animated animate__bounce animate__infinite mobile ">
       </div>
      </div>
-    </section>
-</div>
+     </section>
+ </div>  
+ 
+     <!-- Benefits section -->
+     <section class="benefits">
+      <!-- Images -->
+      <div class="pic">
+        <img src="./images/group.png" alt="Google pixels" class="animate__animated animate__bounce animate__infinite mobile">
+      </div>
+
+      <!-- Benefits List -->
+    <div class="ben-list">
+      <h1>Benefits of Pixel</h1> 
+
+      <h3>Smart AI Camera</h3>
+      <p>Capture stunning photos in any lighting with Google’s advanced AI camera
+  system. Automatic color correction, sharp focus, and clear night shots make 
+  every moment look professional.</p>
+
+      <h3>Clean Android Experience</h3>
+      <p>Enjoy pure Android exactly as Google designed it. No ads, no extra apps
+  just a smooth, fast, and distraction-free user experience.</p>
+
+      <h3>Fast & Smooth Performance</h3>
+      <p>Apps open quickly, multitasking feels smooth, and performance stays consistent all day.</p>
+
+      <h3>Strong Security & Regular Updates</h3>
+      <p>Built-in security features protect your data at all times. Get regular 
+  security patches and Android updates directly from Google.</p>
+    </div>
+   </section>
     <!-- ////////// HOME-SECTION---END-HERE ////////// -->
 
     <!-- ////////// ABOUT-SECTION---START-HERE ////////// -->
+     <!-- Content -->
+     <section class="about-sec" id="about">
+      <div class="abt-content">
+      <h1 class="abt-hd">About Us</h1>
+      <p>At AmStack, we specialize in providing the latest Google Pixel phones, 
+  combining sleek design with powerful performance. Each device delivers fast 
+  multitasking, a pure Android experience, and smart AI features that make work,
+  gaming, and photography effortless.
+
+       Our mission is to offer high-quality, reliable products that keep you 
+  connected and ahead in your digital life. With genuine devices, regular security
+  updates, and dedicated support, we ensure your Google Pixel experience is 
+  seamless, secure, and enjoyable.</p>
+     <!-- Buttons -->
+    <button class="order">Order Now</button>
+    <button class="see1">See Collection</button>
+    </div>
+    <!-- Images -->
+    <div class="abt-img">
+      <img src="./images/about.png" alt="Mobiles" class="animate__animated animate__bounce animate__infinite mobile">
+    </div>
+     </section>
+
+     <!-- Fact section -->
+    <section class="fact">
+  <div class="fact-sec text-center">
+    <h1>Some Facts About Us:</h1>
+    <p>Google Pixel phones receive Android updates and security patches directly from Google.</p>
+    <!-- WRAPPER -->
+    <div class="fact-cards">
+      <div class="card border-0 card12">
+        <div class="card-body">
+          <i class="fa-solid fa-cloud-arrow-down icon1"></i>
+          <h4 class="card-title text">10M+</h4>
+          <p class="card-text text">Orders</p>
+        </div>
+      </div>
+
+      <div class="card border-0 card12">
+        <div class="card-body">
+          <i class="fa-solid fa-heart icon1"></i>
+          <h4 class="card-title text">15M+</h4>
+          <p class="card-text text">Love</p>
+        </div>
+      </div>
+
+      <div class="card border-0 card12">
+        <div class="card-body">
+          <i class="fa-brands fa-twitter icon1"></i>
+          <h4 class="card-title text">18M+</h4>
+          <p class="card-text text">Followers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="fact-abt">
+  <div class="f-abt text-center">
+    <h1>Fact About Google Pixel Pro</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque ullam 
+facilis. Expedita ea, eveniet vero explicabo cupiditate illum, tempora magni 
+repellendus aliquam reprehenderit adipisci repudiandae, iure nisi quod error quae 
+minus accusantium numquam corrupti dolor sint exercitationem? Magni iure iste a 
+eveniet non! Reiciendis repellendus sequi autem cum nulla?</p>
+  </div>
+</section>
     <!-- ////////// ABOUT-SECTION---END-HERE ////////// -->
 
     <!-- ////////// COLLECTION-SECTION---START-HERE ////////// -->
+    <section class="gallery-sec">
+      <div class="gallery-wrap">
+       <div class="gallery-item">
+        <img src="./images/img1.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img2.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img3.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img4.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img5.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img6.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img7.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img8.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img9.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img10.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img11.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/img12.jpg" alt="gallery-item" class="inverted-radius">
+      </div>
+      </div>
+    </section>
     <!-- ////////// COLLECTION-SECTION---END-HERE ////////// -->
 
     <!-- ////////// CONTACT-SECTION---START-HERE ////////// -->
