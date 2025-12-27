@@ -616,6 +616,60 @@ header {
   }
 }
 
+@media (max-width: 230px) {
+
+  .contact-wrap {
+    grid-template-columns: 1fr !important; /* kill 2 columns */
+    gap: 16px !important;
+    padding: 12px 6px !important;
+    width: 100%;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info-box {
+    flex-direction: column;   /* THIS is key */
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    word-break: break-word;
+  }
+
+  .info-box i {
+    font-size: 16px;
+  }
+
+  .contact-form form {
+    padding: 8px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    font-size: 11px;
+  }
+}
+
+
+/* =========================
+   FOOTER SECTION
+========================= */
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1em 2em;
+}
+
 /* =========================
    TABLET
 ========================= */
